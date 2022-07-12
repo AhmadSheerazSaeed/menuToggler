@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.toggler {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  margin: 3rem 0 0 3rem;
+
+  background-color: darkgreen;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bar1 {
+  position: absolute;
+  width: 90%;
+  height: 5px;
+  background-color: darkgray;
+  transform: translateY(-10px);
+  border-radius: 15px;
+}
+
+.bar2 {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: darkgray;
+  border-radius: 15px;
+}
+
+.bar3 {
+  position: absolute;
+  width: 90%;
+  height: 5px;
+  background-color: darkgray;
+  transform: translateY(10px);
+  border-radius: 15px;
+}
+
+.togglerChange #bar1 {
+  transform: translateY(0px) rotate(410deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.togglerChange #bar2 {
+  opacity: 0;
+}
+
+.togglerChange #bar3 {
+  transform: translateY(0px) rotate(-410deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.navBar1 {
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+  display: none;
+  width: 10rem;
+  background-color: darkolivegreen;
+  position: absolute;
+  border-radius: 13px;
+}
+
+.navBar1,
+.toggler {
+  z-index: 8;
+}
+
+.navBar1 li {
+  list-style: none;
+  padding: 7px 13px 7px 13px;
+}
+
+.navBar1 li a {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 7px;
+}
+
+.navBar1 li a:hover {
+  font-weight: bold;
+}
+
+.navBar1Toggle {
+  display: block;
+}
+
+.nav-bg {
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+
+  margin-top: -6.4rem;
+  margin-left: -8rem;
+
+  background-color: darkgray;
+  z-index: 1;
+  border-radius: 50%;
+  display: none;
+}
+
+.change-bg {
+  display: block;
+}
